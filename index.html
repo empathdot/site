@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empath.FUN 🌙</title>
+  <style>
+    /* Reset + Global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: #f5f5f5;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #000;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #f5f5f5;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 2rem;
+      background: linear-gradient(to right, #111, #222);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Sections */
+    .section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #444;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: #222;
+      color: #f5f5f5;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background: #ffd700;
+      color: #111;
+    }
+
+    .btn.large {
+      font-size: 1.2rem;
+      padding: 0.8rem 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 2rem;
+      background: #000;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Empath.FUN 🌙</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#download" class="btn">Download</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Welcome to Empath.FUN 🌙</h1>
+    <p>Official website for <strong>Empath</strong> — the BEST external.</p>
+    <a href="#download" class="btn large">Download Now</a>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      Empath.FUN is sleek, fast, and built for anyone who wants a clean,
+      simple external with style.
+    </p>
+  </section>
+
+  <!-- Notes -->
+  <section id="notes" class="section">
+    <h2>Notes</h2>
+    <ul style="list-style:none; padding:0;">
+      <li>Cheap pricing</li>
+      <li>Aimbot - Silent - ESP</li>
+      <li>Easy setup & fast updates</li>
+    </ul>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="section">
+    <h2>Download</h2>
+    <p>Click below to get started:</p>
+    <a href="https://example.com/download" class="btn large">⬇ Download</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Empath.FUN — All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
