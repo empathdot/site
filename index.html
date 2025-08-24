@@ -1,179 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>empath.fun 🌙</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Empath.FUN</title>
   <style>
-    /* Reset + Global */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
-    }
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background: #111;
-      color: #f5f5f5;
+      background: #151515;
+      color: #eaeaea;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.5;
       text-align: center;
-      line-height: 1.6;
     }
 
     /* Navbar */
     .navbar {
+      background: #202020;
+      padding: 12px 20px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background: #000;
+      justify-content: center;
+      gap: 40px;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
+      border-bottom: 1px solid #2a2a2a;
     }
 
-    .logo {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1.2rem;
-    }
-
-    .nav-links a {
+    .navbar a {
+      color: #ccc;
       text-decoration: none;
-      color: #f5f5f5;
-      transition: 0.3s;
+      font-weight: 500;
+      transition: color 0.2s ease;
     }
 
-    .nav-links a:hover {
-      color: #ffd700;
+    .navbar a:hover { color: #fff; }
+
+    /* Header */
+    header {
+      padding: 70px 20px 50px;
     }
 
-    /* Hero */
-    .hero {
-      padding: 5rem 2rem;
-      background: linear-gradient(to right, #111, #222);
-    }
-
-    .hero h1 {
+    h1 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 10px;
     }
 
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+    p {
+      color: #b5b5b5;
+      margin-bottom: 15px;
     }
 
-    /* Sections */
-    .section {
-      padding: 3rem 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #444;
-      display: inline-block;
-      padding-bottom: 0.3rem;
-    }
-
-    /* Buttons */
+    /* Button */
     .btn {
       display: inline-block;
-      padding: 0.6rem 1.2rem;
-      background: #222;
-      color: #f5f5f5;
+      padding: 10px 22px;
+      background: #303030;
+      color: #eaeaea;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 6px;
-      transition: 0.3s;
-      margin-top: 1rem;
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #444; }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      border-bottom: 1px solid #222;
     }
 
-    .btn:hover {
-      background: #ffd700;
-      color: #111;
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
     }
 
-    .btn.large {
-      font-size: 1.2rem;
-      padding: 0.8rem 1.5rem;
-    }
+    ul { list-style: none; padding: 0; }
+    ul li { margin: 8px 0; }
 
     /* Footer */
     footer {
-      padding: 2rem;
-      background: #000;
-      margin-top: 3rem;
-      font-size: 0.9rem;
+      padding: 25px;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">Empath.FUN 🌙</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#notes">Notes</a></li>
-      <li><a href="#download" class="btn">Download</a></li>
-    </ul>
+    <a href="#about">About</a>
+    <a href="#notes">Notes</a>
+    <a href="#features">Features</a>
+    <a href="#faq">FAQ</a>
+    <a href="#download">Download</a>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero">
-    <h1>Welcome to Empath.FUN 🌙</h1>
-    <p>Official website for <strong>Empath</strong> - the BEST external.</p>
-    <a href="#download" class="btn large">Download Now</a>
+  <!-- Header -->
+  <header>
+    <h1>Empath.fun</h1>
+    <p>The BEST external - undected, fast, and built to last.</p>
+    <a class="btn" href="#download">Download Now</a>
   </header>
 
   <!-- About -->
-  <section id="about" class="section">
+  <section id="about">
     <h2>About</h2>
     <p>
-      Empath.FUN is cheap, undected, and built for anyone who wants a fast,
-      simple external.
+      Empath.fun is an undected external designed with stability and simplicity
+      in mind. Built for users who want smooth performance.
     </p>
   </section>
 
   <!-- Notes -->
-  <section id="notes" class="section">
+  <section id="notes">
     <h2>Notes</h2>
-    <ul style="list-style:none; padding:0;">
-      <li>Cheap pricing</li>
-      <li>Aimbot - Silent - ESP</li>
-      <li>Easy setup & fast updates</li>
+    <ul>
+      <li>⚡ Fast updates</li>
+      <li>🎨 Matte minimal design</li>
+      <li>🛠️ Lightweight and stable</li>
     </ul>
   </section>
 
+  <!-- Features -->
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>✔️ Streamlined design</li>
+      <li>✔️ Easy setup</li>
+      <li>✔️ Reliable performance</li>
+      <li>✔️ Ongoing support</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>FAQ</h2>
+    <p><b>Q: Is it free?</b><br/>Yes, Empath is 100% free to use.</p>
+    <br/>
+    <p><b>Q: How do I install it?</b><br/>Just download the release and follow the instructions.</p>
+    <br/>
+    <p><b>Q: Does it update?</b><br/>Yes, we keep Empath updated regularly.</p>
+  </section>
+
   <!-- Download -->
-  <section id="download" class="section">
+  <section id="download">
     <h2>Download</h2>
-    <p>Click below to get started:</p>
-    <a href="https://example.com/download" class="btn large">⬇ Download</a>
+    <p>Click below to grab the latest release of Empath.FUN.</p>
+    <a class="btn" href="https://empath.fun/download" download>Download</a>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Empath.FUN — All rights reserved.</p>
+    <p>© 2025 Empath.FUN - All rights reserved.</p>
   </footer>
-
-  <script>
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 </body>
 </html>
